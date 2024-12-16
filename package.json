@@ -1,6 +1,6 @@
 {
-  "name": "@rolldeep-stepmerrily/markdown-ts-lib",
-  "version": "1.0.7",
+  "name": "markdown-ts-lib",
+  "version": "1.0.6",
   "description": "A TypeScript library for generating Markdown.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -20,7 +20,7 @@
     "url": "https://github.com/rolldeep-stepmerrily/markdown-ts-lib/issues"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://registry.npmjs.org/"
   },
   "homepage": "https://github.com/rolldeep-stepmerrily/markdown-ts-lib#readme",
   "keywords": [
