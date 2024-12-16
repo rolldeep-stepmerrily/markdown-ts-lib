@@ -1,38 +1,38 @@
-import { IListMarkdownObject, IStrMarkdownOptions } from '@@interfaces';
+import { IListMarkdownObject, IStrMarkdownOptions } from './interfaces';
 
-export const toStrMarkdown = (text: string, options: IStrMarkdownOptions): string => {
+export const toStrMarkdown = (text: string, options?: IStrMarkdownOptions): string => {
   let markdown = text;
 
   const styles: string[] = [];
 
-  if (options.codeBlock) {
+  if (options?.codeBlock) {
     styles.push('```');
   } else {
-    if (options.bold) {
+    if (options?.bold) {
       styles.push('**');
     }
 
-    if (options.italic) {
+    if (options?.italic) {
       styles.push('*');
     }
 
-    if (options.underline) {
+    if (options?.underline) {
       styles.push('_');
     }
 
-    if (options.strikethrough) {
+    if (options?.strikethrough) {
       styles.push('~');
     }
 
-    if (options.link) {
+    if (options?.link) {
       styles.push(`[${options.link.text}](${options.link.url})`);
     }
 
-    if (options.headerLevel && options.headerLevel < 7) {
-      styles.push(`#`.repeat(options.headerLevel));
+    if (options?.headerLevel && options?.headerLevel < 7) {
+      styles.push(`#`.repeat(options?.headerLevel));
     }
 
-    if (options.headerLevel && (options.headerLevel < 1 || options.headerLevel > 6)) {
+    if (options?.headerLevel && (options?.headerLevel < 1 || options?.headerLevel > 6)) {
       throw new Error('Header level must be between 1 and 6');
     }
   }
