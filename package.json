@@ -20,7 +20,7 @@
     "url": "https://github.com/rolldeep-stepmerrily/markdown-ts-lib/issues"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://registry.npmjs.org/"
   },
   "homepage": "https://github.com/rolldeep-stepmerrily/markdown-ts-lib#readme",
   "keywords": [
